@@ -1,0 +1,39 @@
+.top__menu {
+  z-index: 1;
+  border: 1px solid #eee;
+  background-color: white;
+  position: fixed;
+  top: 0;  
+  .logo__insta {
+    text-align: left;
+  }
+  .input__search {
+    #example3 {
+      text-align: center;
+      &::placeholder {
+        opacity: 0.8;
+      }
+      &:focus {
+        text-align: left;
+        outline: none;
+        border-color: #ced4da;
+        box-shadow: none;
+      }
+    }
+  }
+  .load__pages {
+    text-align: right;
+    position: relative;    
+    a{
+      padding: 8px 8px;           
+    }
+    
+}
+}
+
+@media only screen and (max-width: 640px) {
+  .input__search {
+    display: none;
+    visibility: hidden;
+  }
+}

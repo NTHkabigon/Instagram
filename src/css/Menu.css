@@ -1,0 +1,56 @@
+.top__menu {
+  z-index: 1;
+  border: 1px solid #eee;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}
+
+.top__menu .logo__insta {
+  text-align: left;
+}
+
+.top__menu .input__search #example3 {
+  text-align: center;
+}
+
+.top__menu .input__search #example3::-webkit-input-placeholder {
+  opacity: 0.8;
+}
+
+.top__menu .input__search #example3:-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.top__menu .input__search #example3::-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.top__menu .input__search #example3::placeholder {
+  opacity: 0.8;
+}
+
+.top__menu .input__search #example3:focus {
+  text-align: left;
+  outline: none;
+  border-color: #ced4da;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.top__menu .load__pages {
+  text-align: right;
+  position: relative;
+}
+
+.top__menu .load__pages a {
+  padding: 8px 8px;
+}
+
+@media only screen and (max-width: 640px) {
+  .input__search {
+    display: none;
+    visibility: hidden;
+  }
+}
+/*# sourceMappingURL=Menu.css.map */

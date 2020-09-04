@@ -1,0 +1,41 @@
+.explore__view{
+    border: 1px solid #eee;
+    
+    .masonry-with-columns-2 {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        height: 200px;
+        line-height: 150px;
+        background: #9B1B30;
+        color: white;
+        margin: 0 1rem 1rem 0;
+        text-align: center;
+        font-weight: 900;
+        font-size: 2rem;
+        flex: 1 0 auto;
+      }
+      @for $i from 1 through 36 {
+        img:nth-child(#{$i}) {
+          $h: (random(250) + 70) + px;
+          width: $h;
+        }
+      }
+    }
+    /* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .explore__layout img {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .explore__layout img {
+      flex: 100%;
+      max-width: 100%;
+    }
+    
+}
+}
